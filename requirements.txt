@@ -10,3 +10,4 @@ Sphinx
 sphinx-rtd-theme
 tox
 twine
+pyopenssl

@@ -24,6 +24,7 @@ import click
 from .__init__ import __version__
 from .aws_user_access_key import AwsAccessKey
 from .github import Github
+from .gcp_service_account import GcpServiceAccount
 
 LOGGING_LEVELS = {
     0: logging.NOTSET,
@@ -95,8 +96,21 @@ def github(_: Info):
 def personal_access_token(info: Info):
     """Create mock classic github PAT"""
     info.github = Github()
-    print(json.dumps(info.github.personal_access_token_payload(),indent=4))
+    github_pat = info.github.personal_access_token_payload()
+    print(json.dumps(github_pat,indent=4))
 
+@cli.group()
+@pass_info
+def gcp(_: Info):
+    """Generate credentials for Google Cloud Platform services"""
+
+@gcp.command()
+@pass_info
+def service_account_credentials(info: Info):
+    """Create mock service account tokens"""
+    info.gcp_service_account = GcpServiceAccount()
+    gcp_service_accounts_payload = info.gcp_service_account.generate_service_account_payload()
+    print(json.dumps(gcp_service_accounts_payload, indent=4))
 
 @cli.command()
 def version():
