@@ -23,6 +23,7 @@ import logging
 import click
 from .__init__ import __version__
 from .aws_user_access_key import AwsAccessKey
+from .github import Github
 
 LOGGING_LEVELS = {
     0: logging.NOTSET,
@@ -83,6 +84,18 @@ def user_access_keys(info: Info):
     info.aws_access_keys = AwsAccessKey()
     access_keys_payload = info.aws_access_keys.generate_create_aws_access_key_payload()
     print(json.dumps(access_keys_payload, indent=4))
+
+@cli.group()
+@pass_info
+def github(_: Info):
+    """Generate credentials for github."""
+
+@github.command()
+@pass_info
+def personal_access_token(info: Info):
+    """Create mock classic github PAT"""
+    info.github = Github()
+    print(json.dumps(info.github.personal_access_token_payload(),indent=4))
 
 
 @cli.command()
