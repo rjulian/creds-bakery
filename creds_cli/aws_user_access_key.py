@@ -1,7 +1,6 @@
 """ Utility to mock out payload of creating AWS access keys. """
 import datetime
 import uuid
-import json
 import random
 import base64
 import string

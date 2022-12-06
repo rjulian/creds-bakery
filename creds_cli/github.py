@@ -1,3 +1,4 @@
+"""Module that creates github focused secrets and credentials"""
 import random
 import uuid
 import string
