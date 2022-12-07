@@ -10,11 +10,11 @@ Getting Started
 Installing the Library
 ======================
 
-You can use pip to install `creds_bakery`.
+You can use pip to install `creds-bakery`.
 
 .. code-block:: sh
 
-    pip install creds_bakery
+    pip install creds-bakery
 
 
 

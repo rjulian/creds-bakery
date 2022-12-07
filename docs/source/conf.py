@@ -81,7 +81,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "creds_bakery"
+project = "creds-bakery"
 copyright = "2019, rjulian"
 author = "rjulian"
 
