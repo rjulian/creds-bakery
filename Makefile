@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := build
 .PHONY: build publish package coverage test lint docs venv
-PROJ_SLUG = creds_cli
-CLI_NAME = creds_cli
+PROJ_SLUG = creds_bakery
+CLI_NAME = creds_bakery
 PY_VERSION = 3.8
 LINTER = pylint
 

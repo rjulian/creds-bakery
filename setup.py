@@ -26,7 +26,7 @@ with open(path.join(here, "README.rst"), encoding="utf-8") as f:
 vspec = importlib.util.spec_from_file_location(
   "version",
   str(Path(__file__).resolve().parent /
-      "creds_cli"/"version.py")
+      "creds_bakery"/"version.py")
 )
 vmod = importlib.util.module_from_spec(vspec)
 vspec.loader.exec_module(vmod)
@@ -38,7 +38,7 @@ if os.getenv("buildnum") is not None:
     version = f"{version}.{os.getenv('buildnum')}"
 
 setup(
-    name='creds-cli',
+    name='creds-bakery',
     description="Generate mock credentials and keys for various services.",
     long_description=long_description,
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
@@ -49,17 +49,17 @@ setup(
     ],
     entry_points="""
     [console_scripts]
-    creds_cli=creds_cli.cli:cli
+    bakery=creds_bakery.cli:cli
     """,
     python_requires=">=0.0.1",
     license='MIT',  # noqa
     author='rjulian',
     author_email='richard@rjulian.net',
     # Use the URL to the github repo.
-    url= 'https://github.com/rjulian/creds_cli',
+    url= 'https://github.com/rjulian/creds_bakery',
     download_url=(
         f'https://github.com/rjulian/'
-        f'creds_cli/archive/{version}.tar.gz'
+        f'creds_bakery/archive/{version}.tar.gz'
     ),
     keywords=[
         # Add package keywords here.

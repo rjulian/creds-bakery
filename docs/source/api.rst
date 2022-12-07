@@ -6,7 +6,7 @@
 API Documentation
 =================
 
-.. automodule:: creds_cli
+.. automodule:: creds_bakery
     :members:
     :undoc-members:
     :show-inheritance:

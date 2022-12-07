@@ -15,7 +15,7 @@ It can be used as a handy facility for running the task from a command line.
     To learn more about running Luigi, visit the Luigi project's
     `Read-The-Docs <http://luigi.readthedocs.io/en/stable/>`_ page.
 
-.. currentmodule:: creds_cli.cli
+.. currentmodule:: creds_bakery.cli
 .. moduleauthor:: rjulian <richard@rjulian.net>
 """
 import json
@@ -54,7 +54,7 @@ pass_info = click.make_pass_decorator(Info, ensure=True)
 @click.option("--verbose", "-v", count=True, help="Enable verbose output.")
 @pass_info
 def cli(info: Info, verbose: int):
-    """Run creds_cli."""
+    """Run creds_bakery."""
     # Use the verbosity count to determine the logging level...
     if verbose > 0:
         logging.basicConfig(

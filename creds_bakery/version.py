@@ -4,7 +4,7 @@
 """
 This module contains project version information.
 
-.. currentmodule:: creds_cli.version
+.. currentmodule:: creds_bakery.version
 .. moduleauthor:: rjulian <richard@rjulian.net>
 """
 

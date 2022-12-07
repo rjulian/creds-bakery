@@ -1,10 +1,10 @@
-# creds_cli
+# creds_bakery
 
 Generate mock credentials and keys for various services.
 
 ## Project Features
 
-* [creds_cli](http://creds-cli.readthedocs.io/)
+* [creds_bakery](http://creds-cli.readthedocs.io/)
 * a starter [Click](http://click.pocoo.org/5/) command-line application
 * automated unit tests you can run with [pytest](https://docs.pytest.org/en/latest/)
 * a [Sphinx](http://www.sphinx-doc.org/en/master/) documentation project
@@ -37,7 +37,7 @@ Below are some handy resource links.
 
 * **rjulian** - *Initial work* - [github](https://github.com/rjulian)
 
-See also the list of [contributors](https://github.com/rjulian/creds_cli/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/rjulian/creds_bakery/contributors) who participated in this project.
 
 ## LicenseMIT License
 

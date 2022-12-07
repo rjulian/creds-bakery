@@ -4,7 +4,7 @@
 """
 Generate mock credentials and keys for various services.
 
-.. currentmodule:: creds_cli
+.. currentmodule:: creds_bakery
 .. moduleauthor:: rjulian <richard@rjulian.net>
 """
 

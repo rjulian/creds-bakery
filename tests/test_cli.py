@@ -9,8 +9,8 @@ This is the test module for the project's command-line interface (CLI)
 module.
 """
 # fmt: off
-import creds_cli.cli as cli
-from creds_cli import __version__
+import creds_bakery.cli as cli
+from creds_bakery import __version__
 # fmt: on
 from click.testing import CliRunner, Result
 
@@ -51,6 +51,6 @@ def test_hello_displays_expected_message():
     runner: CliRunner = CliRunner()
     result: Result = runner.invoke(cli.cli, ["hello"])
     # fmt: off
-    assert 'creds_cli' in result.output.strip(), \
+    assert 'creds_bakery' in result.output.strip(), \
         "'Hello' messages should contain the CLI name."
     # fmt: on
