@@ -25,6 +25,7 @@ from .__init__ import __version__
 from .aws_user_access_key import AwsAccessKey
 from .github import Github
 from .gcp_service_account import GcpServiceAccount
+from .oracle_user_auth_token import OracleUserAuthToken
 
 LOGGING_LEVELS = {
     0: logging.NOTSET,
@@ -75,7 +76,7 @@ def cli(info: Info, verbose: int):
 @cli.group()
 @pass_info
 def aws(_: Info):
-    """Generate credentials for AWS services."""
+    """Generate mock credentials for AWS services."""
 
 
 @aws.command()
@@ -89,7 +90,7 @@ def user_access_keys(info: Info):
 @cli.group()
 @pass_info
 def github(_: Info):
-    """Generate credentials for github."""
+    """Generate mock credentials for Github."""
 
 @github.command()
 @pass_info
@@ -102,7 +103,7 @@ def personal_access_token(info: Info):
 @cli.group()
 @pass_info
 def gcp(_: Info):
-    """Generate credentials for Google Cloud Platform services"""
+    """Generate mock credentials for Google Cloud Platform services"""
 
 @gcp.command()
 @pass_info
@@ -111,6 +112,19 @@ def service_account_credentials(info: Info):
     info.gcp_service_account = GcpServiceAccount()
     gcp_service_accounts_payload = info.gcp_service_account.generate_service_account_payload()
     print(json.dumps(gcp_service_accounts_payload, indent=4))
+
+@cli.group()
+@pass_info
+def oracle_cloud(_: Info):
+    """Generates mock credentials for Oracle Cloud Infrastructure"""
+
+@oracle_cloud.command()
+@pass_info
+def user_auth_token(info: Info):
+    """Creates mock user auth token payload."""
+    info.oracle_auth_token = OracleUserAuthToken()
+    oracle_auth_token_payload = info.oracle_auth_token.generate_user_auth_token()
+    print(json.dumps(oracle_auth_token_payload, indent=4))
 
 @cli.command()
 def version():
