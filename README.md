@@ -1,5 +1,6 @@
 # bakery
-![master](https://github.com/rjulian/creds-bakery/actions/workflows/main.yml/badge.svg?branch=master)
+[![creds-bakery](https://github.com/rjulian/creds-bakery/actions/workflows/main.yaml/badge.svg)](https://github.com/rjulian/creds-bakery/actions/workflows/main.yaml)
+
 CLI tool to generate mock credentials and keys for various cloud and public services.
 
 Get started by installing and as an example, running `bakery aws user-access-keys` to be vended some mock credentials for AWS. 
