@@ -1,6 +1,15 @@
 # bakery
 
-Generate mock credentials and keys for various services.
+CLI tool to generate mock credentials and keys for various cloud and public services.
+
+Get started by installing and as an example, running `bakery aws user-access-keys` to be vended some mock credentials for AWS. 
+
+## Why?
+
+Sometimes, you just need fake credentials for real services. Here are some good examples of when to use these credentials:
+* Testing secrets detection tools.
+* Creating realistic payloads for red team exercises and capture-the-flag competitions.
+* Usage in public content (e.g. tutorials) where demonstrating real credentials usage matters. 
 
 ## Project Features
 
@@ -37,7 +46,7 @@ Below are some handy resource links.
 
 * **rjulian** - *Initial work* - [github](https://github.com/rjulian)
 
-See also the list of [contributors](https://github.com/rjulian/creds_bakery/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/rjulian/creds-bakery/contributors) who participated in this project.
 
 ## LicenseMIT License
 
