@@ -14,8 +14,8 @@ steps from top to bottom you should be ready to roll by the end.
 Get the Source
 ==============
 
-The source code for the `creds-cli` project lives at
-`github <https://github.com/rjulian/creds-cli>`_.  
+The source code for the `creds-bakery` project lives at
+`github <https://github.com/rjulian/creds-bakery>`_.  
 You can use `git clone` to get it.
 
 .. code-block:: bash

@@ -4,7 +4,7 @@ Generate mock credentials and keys for various services.
 
 ## Project Features
 
-* [creds_bakery](http://creds-cli.readthedocs.io/)
+* [creds_bakery](http://creds-bakery.readthedocs.io/)
 * a starter [Click](http://click.pocoo.org/5/) command-line application
 * automated unit tests you can run with [pytest](https://docs.pytest.org/en/latest/)
 * a [Sphinx](http://www.sphinx-doc.org/en/master/) documentation project
@@ -12,7 +12,7 @@ Generate mock credentials and keys for various services.
 ## Getting Started
 
 The project's documentation contains a section to help you
-[get started](https://creds-cli.readthedocs.io/en/latest/getting_started.html) as a developer or
+[get started](https://creds-bakery.readthedocs.io/en/latest/getting_started.html) as a developer or
 user of the library.
 
 ## Development Prerequisites
@@ -26,7 +26,7 @@ If you're going to be working in the code (rather than just using the library), 
 
 Below are some handy resource links.
 
-* [Project Documentation](http://creds-cli.readthedocs.io/)
+* [Project Documentation](http://creds-bakery.readthedocs.io/)
 * [Click](http://click.pocoo.org/5/) is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary.
 * [Sphinx](http://www.sphinx-doc.org/en/master/) is a tool that makes it easy to create intelligent and beautiful documentation, written by Geog Brandl and licnsed under the BSD license.
 * [pytest](https://docs.pytest.org/en/latest/) helps you write better programs.

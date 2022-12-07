@@ -1,8 +1,8 @@
-.. creds-cli documentation master file
+.. creds-bakery documentation master file
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-creds-cli
+creds-bakery
 =========
 
 Generate mock credentials and keys for various services.
