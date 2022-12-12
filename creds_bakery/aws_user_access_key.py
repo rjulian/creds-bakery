@@ -23,7 +23,7 @@ class AwsAccessKey:
         random_start_letter = [random.choice(POSSIBLE_LETTERS)]
         random_suffix_characters = random.choices(POSSIBLE_CHARS, k=15)
         random_characters = random_start_letter + random_suffix_characters
-        return "".join(random_characters)
+        return "AKIA" + "".join(random_characters)
 
     @staticmethod
     def generate_secret_access_key():
@@ -38,7 +38,7 @@ class AwsAccessKey:
         """Creates payload for access key values"""
         return {
             "UserName": self.user_name,
-            "AccessKeyId": "AKIA" + AwsAccessKey.generate_access_key_random(),
+            "AccessKeyId": AwsAccessKey.generate_access_key_random(),
             "Status": "Active",
             "SecretAccessKey": AwsAccessKey.generate_secret_access_key(),
             "CreateDate": self.create_date,
